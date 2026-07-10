@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-width=1.0">
     <title>Clube do Jogo</title>
     <style>
-        /* AQUI FICA O ESTILO (Cores, fontes, etc) */
+        /* ========================================= */
+        /* ESTILOS GERAIS (Cores de texto, fontes, etc) */
+        /* ========================================= */
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 0; padding: 0; color: white; background-color: #111; text-align: center; 
@@ -13,33 +15,60 @@
         h1 { font-size: 3em; margin-bottom: 10px; }
         p.subtitle { font-size: 1.2em; max-width: 800px; margin: 0 auto 40px auto; color: #ccc; }
         
-        /* Seções */
+        /* Estrutura das Seções */
         .boas-vindas { padding: 80px 20px; background: linear-gradient(135deg, #1e1e1e, #000000); }
         .game-section { padding: 80px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
         
-        /* Caixinha preta translúcida para facilitar a leitura */
+        /* Caixinha preta translúcida para facilitar a leitura dos textos */
         .game-content { max-width: 800px; background: rgba(0,0,0,0.8); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
         .game-content h2 { font-size: 2.5em; margin-top: 0; color: #fff; }
         .game-content p { font-size: 1.1em; line-height: 1.6; text-align: justify; }
         
-        /* Vídeos do YouTube */
+        /* Formatação dos Vídeos do YouTube */
         iframe { max-width: 100%; border-radius: 10px; border: none; margin: 20px 0; aspect-ratio: 16/9; width: 100%; height: 400px; }
         
-        /* FUNDOS TEMÁTICOS (Usando gradientes para dar o clima do jogo) */
+        /* ========================================= */
+        /* FUNDOS TEMÁTICOS DE CADA JOGO */
+        /* ========================================= */
+        
+        /* Jogo 1: To The Moon */
         #to-the-moon { background: linear-gradient(to bottom, #001220, #004d7a); }
+        
+        /* Jogo 2: Observation */
         #observation { background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); }
+        
+        /* Jogo 3: Death's Door */
         #deaths-door { background: linear-gradient(to bottom, #1a0b12, #3b1725); }
         
+        /* Jogo 4: Firewatch */
+        #firewatch { background: linear-gradient(to bottom, #d35400, #c0392b); }
+        
+        /* Jogo 5: Stray */
+        #stray { background: linear-gradient(to bottom, #f39c12, #2c3e50); }
+        
+        /* Jogo 6: God Hand */
+        #god-hand { background: linear-gradient(to bottom, #7f8c8d, #2c3e50); }
+        
+        /* Jogo 7: Brutal Legend */
+        #brutal-legend { background: linear-gradient(to bottom, #2c3e50, #000000); }
+        
+        /* Fundo da área de Votação */
         #votacao { padding: 80px 20px; background: #222; }
     </style>
 </head>
 <body>
 
+    <!-- ========================================= -->
+    <!-- SESSÃO DE BOAS VINDAS -->
+    <!-- ========================================= -->
     <header class="boas-vindas">
-        <h1>🎮 Clube do Jogo</h1>
-        <p class="subtitle">Bem-vindo à nossa primeira rodada! Abaixo você verá as sugestões de games, seus respectivos trailers e sinopses. No final da página, vote naquele que você mais gostou para iniciarmos nossa jornada.</p>
+        <h1>CLUBE DO JOGO</h1>
+        <p class="subtitle">Bem-vindo à nossa primeira rodada! Abaixo você verá as sugestões de games, seus respectivos trailers e sinopses. No final da página, deverá votar naquele que você mais se interessou para iniciarmos esse clube.</p>
     </header>
 
+    <!-- ========================================= -->
+    <!-- JOGO 1: TO THE MOON -->
+    <!-- ========================================= -->
     <section id="to-the-moon" class="game-section">
         <div class="game-content">
             <h2>To The Moon</h2>
@@ -48,6 +77,9 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- JOGO 2: OBSERVATION -->
+    <!-- ========================================= -->
     <section id="observation" class="game-section">
         <div class="game-content">
             <h2>Observation</h2>
@@ -56,14 +88,64 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- JOGO 3: DEATH'S DOOR -->
+    <!-- ========================================= -->
     <section id="deaths-door" class="game-section">
         <div class="game-content">
             <h2>Death's Door</h2>
-            <iframe src="https://www.youtube.com/embed/z1Xq3-QItR0" colgar="allowfullscreen"></iframe>
+            <iframe src="https://www.youtube.com/embed/z1Xq3-QItR0" allowfullscreen></iframe>
             <p>Você é um corvo cujo trabalho é colher almas. Quando a alma que você foi designado para coletar é roubada, você precisa rastrear o ladrão em um reino intocado pela morte. Combate dinâmico, chefes difíceis e uma direção de arte maravilhosa.</p>
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- JOGO 4: FIREWATCH -->
+    <!-- ========================================= -->
+    <section id="firewatch" class="game-section">
+        <div class="game-content">
+            <h2>Firewatch</h2>
+            <iframe src="https://www.youtube.com/embed/kZX3MgsRb0A" allowfullscreen></iframe>
+            <p>Você é Henry, um guarda florestal no Wyoming em 1989. Sua única conexão com o mundo é um rádio bidirecional onde você conversa com sua supervisora, Delilah. Um jogo de mistério espetacular, 100% focado em diálogos e exploração, que dura cerca de 4 horas.</p>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- JOGO 5: STRAY -->
+    <!-- ========================================= -->
+    <section id="stray" class="game-section">
+        <div class="game-content">
+            <h2>Stray</h2>
+            <iframe src="https://www.youtube.com/embed/u84hRUQlaio" allowfullscreen></iframe>
+            <p>Perdido, sozinho e separado de sua família, um gato de rua precisa desvendar um mistério antigo para escapar de uma cibercidade esquecida iluminada por neon. Um jogo de aventura super carismático de umas 5 horas.</p>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- JOGO 6: GOD HAND -->
+    <!-- ========================================= -->
+    <section id="god-hand" class="game-section">
+        <div class="game-content">
+            <h2>God Hand</h2>
+            <iframe src="https://www.youtube.com/embed/M2nN1_T0D1s" allowfullscreen></iframe>
+            <p>Um clássico cult do PS2 de ação e pancadaria. Você controla Gene, um lutador com o lendário "Braço de Deus". O jogo é focado em um sistema de combate absurdamente profundo, customizável e um humor bem peculiar e exagerado.</p>
+        </div>
+    </section>
+    
+    <!-- ========================================= -->
+    <!-- JOGO 7: BRUTAL LEGEND -->
+    <!-- ========================================= -->
+    <section id="brutal-legend" class="game-section">
+        <div class="game-content">
+            <h2>Brutal Legend</h2>
+            <iframe src="https://www.youtube.com/embed/8rGZeb1M0X8" allowfullscreen></iframe>
+            <p>Ação, aventura e heavy metal! Você joga com Eddie Riggs (dublado por Jack Black), um roadie que é transportado para um mundo de fantasia inspirado em capas de álbuns de rock. Mistura hack and slash com elementos inusitados de estratégia.</p>
+        </div>
+    </section>
+    
+    <!-- ========================================= -->
+    <!-- SESSÃO DE VOTAÇÃO FINAL -->
+    <!-- ========================================= -->
     <section id="votacao">
         <div class="game-content">
             <h2>Chegou a hora!</h2>
