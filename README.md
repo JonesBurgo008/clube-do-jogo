@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte da *landing page* oficial do nosso **Clube do Jogo**. O objetivo da página é apresentar as sugestões de games de cada membro, com os respectivos trailers, sinopses, preços e informações técnicas, centralizando a votação para os nossos encontros.
 
-🌐 **Acesse a página aqui:** [Insira aqui o link do seu GitHub Pages]
+🌐 **Acesse a página aqui:** [[Clube do Jogo](https://jonesburgo008.github.io/clube-do-jogo/)]
 
 ---
 
