@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-width=1.0">
     <title>Clube do Jogo</title>
     <style>
-/* ========================================= */
+        /* ========================================= */
         /* ESTILOS GERAIS (Cores de texto, fontes, etc) */
         /* ========================================= */
         body { 
@@ -34,15 +34,47 @@
         /* Caixinha preta translúcida para facilitar a leitura dos textos */
         .game-content { max-width: 800px; background: rgba(0,0,0,0.8); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); width: 100%; box-sizing: border-box; }
         .game-content h2 { font-size: 2.5em; margin-top: 0; color: #fff; }
-        .game-content p { font-size: 1.1em; line-height: 1.6; text-align: justify; }
+        .game-content p { font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px;}
         
         /* Formatação dos Vídeos do YouTube */
         iframe { max-width: 100%; border-radius: 10px; border: none; margin: 20px 0; aspect-ratio: 16/9; width: 100%; height: 400px; }
+
+        /* ========================================= */
+        /* ESTILIZAÇÃO DAS TAGS / CARTÕEZINHOS */
+        /* ========================================= */
+        .game-tags {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .tag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        /* Tag especial para o preço em verde */
+        .price-tag {
+            background: rgba(46, 204, 113, 0.15);
+            border-color: rgba(46, 204, 113, 0.4);
+            color: #2ecc71;
+        }
+        /* Tag especial para avisos como emulação */
+        .warning-tag {
+            background: rgba(241, 196, 15, 0.15);
+            border-color: rgba(241, 196, 15, 0.4);
+            color: #f1c40f;
+        }
         
         /* ========================================= */
         /* FUNDOS TEMÁTICOS COM FOTOS (Overlay) */
         /* ========================================= */
-        /* O código rgba(R, G, B, Opacidade) cria o filtro colorido por cima da imagem */
         
         /* Jogo 1: To The Moon */
         #to-the-moon { 
@@ -100,7 +132,13 @@
         <div class="game-content">
             <h2>To The Moon</h2>
             <iframe src="https://www.youtube.com/embed/sqkJuSV-23U" allowfullscreen></iframe>
-            <p>Dois médicos viajam pelas memórias de um homem à beira da morte para realizar seu último desejo: ir para a lua. Um jogo focado 100% em narrativa, com uma das histórias mais emocionantes e reflexivas dos games indie.</p>
+            <p>Uma história sobre a viagem de dois doutores através das memórias de um homem moribundo, de modo a realizar artificialmente o seu último desejo.</p>
+            <div class="game-tags">
+                <span class="tag price-tag">R$ 27,99</span>
+                <span class="tag">100% Narrativo</span>
+                <span class="tag">História Emocionante</span>
+                <span class="tag">Indie Clássico</span>
+            </div>
         </div>
     </section>
 
@@ -110,8 +148,14 @@
     <section id="observation" class="game-section">
         <div class="game-content">
             <h2>Observation</h2>
-            <iframe src="https://www.youtube.com/embed/yFIf2x6Z11M" allowfullscreen></iframe>
-            <p>Um thriller sci-fi onde você não joga como o herói, mas sim como S.A.M., a Inteligência Artificial de uma estação espacial. Você deve operar as câmeras e sistemas da nave para ajudar a Dra. Emma Fisher a descobrir o que aconteceu com a tripulação.</p>
+            <iframe src="https://www.youtube.com/embed/gKa6eKZBv3U" allowfullscreen></iframe>
+            <p>Observation é um thriller de sci-fi que desvenda o que aconteceu com a Dra. Emma Fisher e a tripulação de sua missão, através das lentes do S.A.M., a inteligência artificial da estação espacial.</p>
+            <div class="game-tags">
+                <span class="tag price-tag">R$ 73,99</span>
+                <span class="tag">Thriller Sci-Fi</span>
+                <span class="tag">Imersivo</span>
+                <span class="tag">Jogue como I.A.</span>
+            </div>
         </div>
     </section>
 
@@ -121,8 +165,14 @@
     <section id="deaths-door" class="game-section">
         <div class="game-content">
             <h2>Death's Door</h2>
-            <iframe src="https://www.youtube.com/embed/z1Xq3-QItR0" allowfullscreen></iframe>
-            <p>Você é um corvo cujo trabalho é colher almas. Quando a alma que você foi designado para coletar é roubada, você precisa rastrear o ladrão em um reino intocado pela morte. Combate dinâmico, chefes difíceis e uma direção de arte maravilhosa.</p>
+            <iframe src="https://www.youtube.com/embed/NjnEg3ucXpc" allowfullscreen></iframe>
+            <p>Ceifar a alma dos mortos e bater o cartão pode ser uma rotina monótona, mas é o trabalho honesto de um Corvo. Mas isso está prestes a mudar, quando sua alma designada é roubada, e você deve perseguir um ladrão desesperado até um reino intocado pela morte.</p>
+            <div class="game-tags">
+                <span class="tag price-tag">R$ 59,99</span>
+                <span class="tag">Combate Dinâmico</span>
+                <span class="tag">Chefes Difíceis</span>
+                <span class="tag">Direção de Arte Maravilhosa</span>
+            </div>
         </div>
     </section>
 
@@ -132,8 +182,14 @@
     <section id="firewatch" class="game-section">
         <div class="game-content">
             <h2>Firewatch</h2>
-            <iframe src="https://www.youtube.com/embed/kZX3MgsRb0A" allowfullscreen></iframe>
-            <p>Você é Henry, um guarda florestal no Wyoming em 1989. Sua única conexão com o mundo é um rádio bidirecional onde você conversa com sua supervisora, Delilah. Um jogo de mistério espetacular, 100% focado em diálogos e exploração, que dura cerca de 4 horas.</p>
+            <iframe src="https://www.youtube.com/embed/cXWlgP5hZzc" allowfullscreen></iframe>
+            <p>Firewatch is a single-player first-person mystery set in the Wyoming wilderness, where your only emotional lifeline is the person on the other end of a handheld radio.</p>
+            <div class="game-tags">
+                <span class="tag price-tag">R$ 59,99</span>
+                <span class="tag">Mistério</span>
+                <span class="tag">Foco em Diálogos</span>
+                <span class="tag">Exploração</span>
+            </div>
         </div>
     </section>
 
@@ -143,8 +199,14 @@
     <section id="stray" class="game-section">
         <div class="game-content">
             <h2>Stray</h2>
-            <iframe src="https://www.youtube.com/embed/u84hRUQlaio" allowfullscreen></iframe>
-            <p>Perdido, sozinho e separado de sua família, um gato de rua precisa desvendar um mistério antigo para escapar de uma cibercidade esquecida iluminada por neon. Um jogo de aventura super carismático de umas 5 horas.</p>
+            <iframe src="https://www.youtube.com/embed/_rkopP_9qis" allowfullscreen></iframe>
+            <p>Perdido, sozinho e separado da sua família, um gato de rua precisa desvendar um mistério ancestral para fugir de uma cibercidade esquecida e encontrar o caminho para casa.</p>
+            <div class="game-tags">
+                <span class="tag price-tag">R$ 89,99</span>
+                <span class="tag">Aventura</span>
+                <span class="tag">Protagonista Gato</span>
+                <span class="tag">Atmosfera Cyberpunk</span>
+            </div>
         </div>
     </section>
 
@@ -154,8 +216,14 @@
     <section id="god-hand" class="game-section">
         <div class="game-content">
             <h2>God Hand</h2>
-            <iframe src="https://www.youtube.com/embed/M2nN1_T0D1s" allowfullscreen></iframe>
-            <p>Um clássico cult do PS2 de ação e pancadaria. Você controla Gene, um lutador com o lendário "Braço de Deus". O jogo é focado em um sistema de combate absurdamente profundo, customizável e um humor bem peculiar e exagerado.</p>
+            <iframe src="https://www.youtube.com/embed/kfCVO20uEB0" allowfullscreen></iframe>
+            <p>Gene é um lutador de rua de 24 anos que possui a 'God Hand', um braço lendário dotado de poder divino. Embora ele seja arrogante e impulsivo, possui um forte senso de justiça. Gene se vê caçado por demônios que buscam o poder de seu braço para ressuscitar o Angra, o Rei Demônio caído. Ao lado de Olivia, a última guardiã das Mãos Divinas, Gene precisa derrotar os Quatro Devas e impedir o apocalipse, enfrentando os capangas mais bizarros e perigosos do submundo.</p>
+            <div class="game-tags">
+                <span class="tag price-tag">R$ 0,00</span>
+                <span class="tag warning-tag">Emulação Necessária</span>
+                <span class="tag">Briga de Rua / Ação</span>
+                <span class="tag">Humor Bizarro</span>
+            </div>
         </div>
     </section>
     
@@ -165,8 +233,14 @@
     <section id="brutal-legend" class="game-section">
         <div class="game-content">
             <h2>Brutal Legend</h2>
-            <iframe src="https://www.youtube.com/embed/8rGZeb1M0X8" allowfullscreen></iframe>
-            <p>Ação, aventura e heavy metal! Você joga com Eddie Riggs (dublado por Jack Black), um roadie que é transportado para um mundo de fantasia inspirado em capas de álbuns de rock. Mistura hack and slash com elementos inusitados de estratégia.</p>
+            <iframe src="https://www.youtube.com/embed/apbgshuBe6M" allowfullscreen></iframe>
+            <p>Brütal Legend is an action-adventure that marries visceral action combat with open-world freedom. Set in a universe somewhere between Lord of the Rings and Spinal Tap, it’s a fresh take on the action/driving genre, which in this case is full of imitation cover bands, demons intent on enslaving humanity and Heavy metal tunes.</p>
+            <div class="game-tags">
+                <span class="tag price-tag">R$ 27,99</span>
+                <span class="tag">Mundo Aberto</span>
+                <span class="tag">Trilha Heavy Metal</span>
+                <span class="tag">Dublado por Jack Black</span>
+            </div>
         </div>
     </section>
     
@@ -178,7 +252,7 @@
             <h2>Chegou a hora!</h2>
             <p style="text-align: center;">Escolha o jogo que definirá nosso primeiro encontro.</p>
             
-            <p style="color: yellow;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBMr4lmwK4DxncHx0JaixGCmcJo3OAw95IbulTb49ITFmDYw/viewform?embedded=true" width="1066" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe></p>
+            <p style="color: yellow;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBMr4lmwK4DxncHx0JaixGCmcJo3OAw95IbulTb49ITFmDYw/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe></p>
 
         </div>
     </section>
